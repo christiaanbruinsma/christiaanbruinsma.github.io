@@ -7,6 +7,9 @@
   <meta name="theme-color" content="#f3f0e9">
   <title>Christiaan Bruinsma — Creative Systems Architect</title>
   <link rel="icon" href="assets/brand/cb-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/main.js" defer></script>
@@ -87,55 +90,97 @@
       </header>
 
       <div class="project-list" id="project-list" aria-live="polite">
-        <article class="project" data-repository="service-hub">
-          <p class="project-number">01</p>
-          <div class="project-copy">
-            <h3><a href="https://github.com/christiaanbruinsma/service-hub">Service Hub</a></h3>
-            <p>Inspect and understand local Linux services with a native GNOME interface.</p>
-          </div>
-          <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
-          <a class="project-arrow" href="https://github.com/christiaanbruinsma/service-hub" aria-label="View Service Hub on GitHub">↗</a>
-        </article>
+        <div class="project-group">
+          <h3 class="project-group-title">End User</h3>
 
-        <article class="project" data-repository="gnome-shell-testbench">
-          <p class="project-number">02</p>
-          <div class="project-copy">
-            <h3><a href="https://github.com/christiaanbruinsma/gnome-shell-testbench">GNOME Shell Testbench</a></h3>
-            <p>A native GNOME application for testing GNOME Shell extensions in isolated nested sessions across multiple resolutions.</p>
-          </div>
-          <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
-          <a class="project-arrow" href="https://github.com/christiaanbruinsma/gnome-shell-testbench" aria-label="View GNOME Shell Testbench on GitHub">↗</a>
-        </article>
+          <article class="project" data-repository="workspace-hub">
+            <p class="project-number">01</p>
+            <div class="project-copy">
+              <h4><a href="https://github.com/christiaanbruinsma/workspace-hub">Workspace Hub</a></h4>
+              <p>A native GNOME app for organizing workspaces, applications, websites and workflows.</p>
+            </div>
+            <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
+            <a class="project-arrow" href="https://github.com/christiaanbruinsma/workspace-hub" aria-label="View Workspace Hub on GitHub">↗</a>
+          </article>
 
-        <article class="project" data-repository="shortcut-deck">
-          <p class="project-number">03</p>
-          <div class="project-copy">
-            <h3><a href="https://github.com/christiaanbruinsma/shortcut-deck">Shortcut Deck</a></h3>
-            <p>A calm, tabbed application launcher for GNOME Shell.</p>
-          </div>
-          <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
-          <a class="project-arrow" href="https://github.com/christiaanbruinsma/shortcut-deck" aria-label="View Shortcut Deck on GitHub">↗</a>
-        </article>
+          <article class="project" data-repository="shortcut-deck">
+            <p class="project-number">02</p>
+            <div class="project-copy">
+              <h4><a href="https://github.com/christiaanbruinsma/shortcut-deck">Shortcut Deck</a></h4>
+              <p>A calm, tabbed application launcher for GNOME Shell.</p>
+            </div>
+            <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
+            <a class="project-arrow" href="https://github.com/christiaanbruinsma/shortcut-deck" aria-label="View Shortcut Deck on GitHub">↗</a>
+          </article>
 
-        <article class="project" data-repository="scratchpad">
-          <p class="project-number">04</p>
-          <div class="project-copy">
-            <h3><a href="https://github.com/christiaanbruinsma/scratchpad">Scratchpad</a></h3>
-            <p>A calm, tabbed scratchpad for GNOME Shell, designed for quick notes, ideas and code.</p>
-          </div>
-          <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
-          <a class="project-arrow" href="https://github.com/christiaanbruinsma/scratchpad" aria-label="View Scratchpad on GitHub">↗</a>
-        </article>
+          <article class="project" data-repository="scratchpad">
+            <p class="project-number">03</p>
+            <div class="project-copy">
+              <h4><a href="https://github.com/christiaanbruinsma/scratchpad">Scratchpad</a></h4>
+              <p>A calm, tabbed scratchpad for GNOME Shell, designed for quick notes, ideas and code.</p>
+            </div>
+            <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
+            <a class="project-arrow" href="https://github.com/christiaanbruinsma/scratchpad" aria-label="View Scratchpad on GitHub">↗</a>
+          </article>
 
-        <article class="project" data-repository="nimbus-bridge">
-          <p class="project-number">05</p>
-          <div class="project-copy">
-            <h3><a href="https://github.com/christiaanbruinsma/nimbus-bridge">Nimbus Bridge</a></h3>
-            <p>Linux compatibility bridge and native control center for the original SteelSeries Nimbus controller.</p>
-          </div>
-          <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
-          <a class="project-arrow" href="https://github.com/christiaanbruinsma/nimbus-bridge" aria-label="View Nimbus Bridge on GitHub">↗</a>
-        </article>
+          <article class="project" data-repository="qr-generator">
+            <p class="project-number">04</p>
+            <div class="project-copy">
+              <h4><a href="https://github.com/christiaanbruinsma/qr-generator">QR Generator</a></h4>
+              <p>Native GNOME QR code generator built with GTK4, libadwaita and Flatpak.</p>
+            </div>
+            <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
+            <a class="project-arrow" href="https://github.com/christiaanbruinsma/qr-generator" aria-label="View QR Generator on GitHub">↗</a>
+          </article>
+        </div>
+
+        <div class="project-group">
+          <h3 class="project-group-title">Developer</h3>
+
+          <article class="project" data-repository="service-hub">
+            <p class="project-number">05</p>
+            <div class="project-copy">
+              <h4><a href="https://github.com/christiaanbruinsma/service-hub">Service Hub</a></h4>
+              <p>Inspect and understand local Linux services with a native GNOME interface.</p>
+            </div>
+            <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
+            <a class="project-arrow" href="https://github.com/christiaanbruinsma/service-hub" aria-label="View Service Hub on GitHub">↗</a>
+          </article>
+
+          <article class="project" data-repository="release-bench">
+            <p class="project-number">06</p>
+            <div class="project-copy">
+              <h4><a href="https://github.com/christiaanbruinsma/release-bench">Release Bench</a></h4>
+              <p>A native GNOME app for building GitHub-ready Flatpak releases from GNOME Builder projects.</p>
+            </div>
+            <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
+            <a class="project-arrow" href="https://github.com/christiaanbruinsma/release-bench" aria-label="View Release Bench on GitHub">↗</a>
+          </article>
+
+          <article class="project" data-repository="gnome-shell-testbench">
+            <p class="project-number">07</p>
+            <div class="project-copy">
+              <h4><a href="https://github.com/christiaanbruinsma/gnome-shell-testbench">GNOME Shell Testbench</a></h4>
+              <p>A native GNOME application for testing GNOME Shell extensions in isolated nested sessions across multiple resolutions.</p>
+            </div>
+            <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
+            <a class="project-arrow" href="https://github.com/christiaanbruinsma/gnome-shell-testbench" aria-label="View GNOME Shell Testbench on GitHub">↗</a>
+          </article>
+        </div>
+
+        <div class="project-group">
+          <h3 class="project-group-title">Personal</h3>
+
+          <article class="project" data-repository="nimbus-bridge">
+            <p class="project-number">08</p>
+            <div class="project-copy">
+              <h4><a href="https://github.com/christiaanbruinsma/nimbus-bridge">Nimbus Bridge</a></h4>
+              <p>Linux compatibility bridge and native control center for the original SteelSeries Nimbus controller.</p>
+            </div>
+            <p class="project-tags"><span>Linux</span><span>GNOME</span><span>Open Source</span></p>
+            <a class="project-arrow" href="https://github.com/christiaanbruinsma/nimbus-bridge" aria-label="View Nimbus Bridge on GitHub">↗</a>
+          </article>
+        </div>
       </div>
       <p class="projects-status" id="projects-status">Showing a curated selection of public work.</p>
     </section>
