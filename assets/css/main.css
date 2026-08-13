@@ -250,6 +250,17 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 400; letter-spacing: 
   letter-spacing: .12em;
   text-transform: uppercase;
 }
+.project-group-title a {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  text-decoration: none;
+}
+.project-group-title a:hover,
+.project-group-title a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: .35em;
+}
 .project {
   display: grid;
   grid-template-columns: 68px minmax(260px, 1.55fr) minmax(220px, .9fr) 34px;
@@ -268,6 +279,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 400; letter-spacing: 
 .project-tags span:not(:last-child)::after { content: "·"; margin-left: .85rem; color: var(--muted); }
 .project-arrow { justify-self: end; text-decoration: none; font-size: 1.35rem; }
 .projects-status { grid-column: 2; margin: 1rem 0 0; color: var(--muted); font-size: .72rem; }
+.projects-status a { text-underline-offset: .2em; }
 
 .profile {
   background: var(--ink);
