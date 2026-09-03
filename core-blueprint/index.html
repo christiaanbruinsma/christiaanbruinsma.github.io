@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Core Blueprint is an open-source WordPress foundation focused on governance, privacy-conscious design, defensive security and maintainable site operations.">
+  <meta name="theme-color" content="#f3f0e9">
+  <title>Core Blueprint — Christiaan Bruinsma</title>
+  <link rel="icon" href="../assets/brand/cb-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/project.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header project-header" aria-label="Primary navigation">
+    <a class="brand-mark" href="../" aria-label="Christiaan Bruinsma, home">
+      <picture>
+        <source srcset="../assets/brand/cb-icon-mark-diap.svg" media="(prefers-color-scheme: dark)">
+        <img src="../assets/brand/cb-icon-mark.svg" alt="" width="44" height="31">
+      </picture>
+    </a>
+    <nav class="site-nav" aria-label="Core Blueprint navigation">
+      <a href="#overview">Overview</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#builders">Builders</a>
+      <a href="https://github.com/christiaanbruinsma/wp-core-blueprint">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="product-hero reveal" aria-labelledby="product-title">
+      <a class="back-link" href="../"><span aria-hidden="true">←</span> Selected work</a>
+      <div class="product-hero-copy">
+        <p class="eyebrow">Core Blueprint · WordPress</p>
+        <h1 id="product-title">Own your WordPress stack. Understand its behavior.</h1>
+        <p class="product-intro">An open-source foundation and wider plugin ecosystem for responsible WordPress administration — built around governance, privacy-conscious architecture, defensive security and long-term maintainability.</p>
+        <div class="product-actions">
+          <a class="button button-primary" href="https://github.com/christiaanbruinsma/wp-core-blueprint">Explore Core Blueprint on GitHub</a>
+          <a class="text-link" href="https://github.com/christiaanbruinsma/wp-core-blueprint/blob/main/docs/PUBLIC-API.md">Developer documentation <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <ul class="product-meta">
+        <li><span>Platform</span>WordPress</li>
+        <li><span>Foundation</span>Open source</li>
+        <li><span>Approach</span>Governance-first</li>
+        <li><span>Architecture</span>Builder-agnostic</li>
+      </ul>
+    </section>
+
+    <section class="editorial-section product-section reveal" id="overview" aria-labelledby="overview-title">
+      <div class="section-index" aria-hidden="true">01</div>
+      <header class="product-section-heading">
+        <p class="eyebrow">Overview</p>
+        <h2 id="overview-title">A WordPress foundation, not another closed platform.</h2>
+      </header>
+      <div class="product-lead">
+        <p>Core Blueprint Base provides shared infrastructure for administration, permissions, auditability, content models and extension contracts while keeping WordPress itself at the center of the architecture.</p>
+        <p>Specialized functionality stays outside the foundation wherever possible. Sites can use the parts they need without turning Base into a monolith or making one external service the center of the stack.</p>
+      </div>
+      <div class="feature-list">
+        <article>
+          <p class="principle-number">01</p>
+          <h3>Governance first</h3>
+          <p>Administrative actions should have clear ownership, explicit permissions, understandable consequences and useful auditability.</p>
+        </article>
+        <article>
+          <p class="principle-number">02</p>
+          <h3>Privacy-conscious</h3>
+          <p>Data flows and dependencies are treated as architectural choices rather than defaults that quietly accumulate over time.</p>
+        </article>
+        <article>
+          <p class="principle-number">03</p>
+          <h3>Defensive by design</h3>
+          <p>Security-sensitive workflows favor safe defaults, explicit boundaries, recovery paths and operational visibility.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial-section product-section product-section-dark reveal" aria-labelledby="principles-title">
+      <div class="section-index" aria-hidden="true">02</div>
+      <header class="product-section-heading">
+        <p class="eyebrow">Principles</p>
+        <h2 id="principles-title">Built around ownership and interoperability.</h2>
+      </header>
+      <p class="product-lead product-lead-single">The goal is not to hide WordPress behind a parallel proprietary platform. Core Blueprint extends native concepts where they fit, isolates optional integrations and keeps user-owned data portable.</p>
+      <div class="feature-list">
+        <article>
+          <p class="principle-number">01</p>
+          <h3>WordPress-native where practical</h3>
+          <p>Roles, capabilities, metadata, hooks, REST conventions and content structures remain the preferred building blocks when they represent the requirement accurately.</p>
+        </article>
+        <article>
+          <p class="principle-number">02</p>
+          <h3>Optional integrations</h3>
+          <p>Builder and service integrations belong behind isolated adapters rather than becoming dependencies of the canonical data model.</p>
+        </article>
+        <article>
+          <p class="principle-number">03</p>
+          <h3>Open contracts</h3>
+          <p>Public extension boundaries are documented so developers can integrate without depending on internal implementation details.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial-section product-section reveal" id="ecosystem" aria-labelledby="ecosystem-title">
+      <div class="section-index" aria-hidden="true">03</div>
+      <header class="product-section-heading">
+        <p class="eyebrow">Ecosystem</p>
+        <h2 id="ecosystem-title">A shared foundation with focused capabilities around it.</h2>
+      </header>
+      <dl class="detail-grid">
+        <div>
+          <dt>Foundation</dt>
+          <dd>Core Blueprint Base — shared governance, UI foundations, security controls and public contracts.</dd>
+        </div>
+        <div>
+          <dt>Structured content</dt>
+          <dd>Content Models for governed post types, taxonomies, fields, relations and portable schemas.</dd>
+        </div>
+        <div>
+          <dt>Site operations</dt>
+          <dd>Operational tooling can live in focused extensions rather than expanding the foundation indefinitely.</dd>
+        </div>
+        <div>
+          <dt>Publishing</dt>
+          <dd>Access, paid content, profiles and related functionality can share common permission and governance boundaries.</dd>
+        </div>
+        <div>
+          <dt>Learning & community</dt>
+          <dd>LMS, communities and certificates can build on the same architectural baseline without becoming Base features.</dd>
+        </div>
+        <div>
+          <dt>Developer ecosystem</dt>
+          <dd>A starter implementation and documented APIs make the extension model inspectable and reusable.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="editorial-section product-section product-section-dark reveal" id="builders" aria-labelledby="builders-title">
+      <div class="section-index" aria-hidden="true">04</div>
+      <header class="product-section-heading">
+        <p class="eyebrow">Builder integrations</p>
+        <h2 id="builders-title">Builder-independent by design. Bricks-aware where useful.</h2>
+      </header>
+      <div class="product-lead">
+        <p>Core Blueprint keeps its canonical content and system architecture independent from any visual builder. A builder adapter can expose functionality where that improves the workflow without becoming the storage model.</p>
+        <p>Bricks Builder is currently the first builder with an isolated adapter in areas where deeper integration adds value. Bricks is not required to use Core Blueprint.</p>
+      </div>
+      <div class="feature-list">
+        <article>
+          <p class="principle-number">01</p>
+          <h3>No builder lock-in</h3>
+          <p>Core data remains accessible independently of a builder-specific interface.</p>
+        </article>
+        <article>
+          <p class="principle-number">02</p>
+          <h3>Isolated adapters</h3>
+          <p>Builder-specific behavior stays separated from the canonical WordPress and Core Blueprint model.</p>
+        </article>
+        <article>
+          <p class="principle-number">03</p>
+          <h3>Room to expand</h3>
+          <p>Additional adapters can be added later when they preserve the same optional, interoperable architecture.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial-section product-download reveal" aria-labelledby="follow-title">
+      <div class="section-index" aria-hidden="true">05</div>
+      <div class="download-copy">
+        <p class="eyebrow">Open source</p>
+        <h2 id="follow-title">Follow Core Blueprint as it approaches v1.</h2>
+        <p>Core Blueprint is currently in pre-v1 development and launch-quality review. The public repository contains the foundation, architecture notes and developer-facing documentation.</p>
+        <div class="product-actions">
+          <a class="button button-primary" href="https://github.com/christiaanbruinsma/wp-core-blueprint">View Core Blueprint on GitHub</a>
+          <a class="text-link" href="https://github.com/christiaanbruinsma/wp-core-blueprint-starter-plugin">Extension Starter <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="download-verification">
+        <p class="eyebrow">Philosophy</p>
+        <code>Own your WordPress stack, understand its behavior, and keep the freedom to change what sits around it.</code>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <p>© <span id="year">2026</span> Christiaan Bruinsma</p>
+    <p>Designed with clarity. Built with purpose.</p>
+  </footer>
+</body>
+</html>
